@@ -53,7 +53,6 @@
 </tr>
 <tr>
 <td>surprise</td>
-<td><audio controls><source src="samples/original/210498.wav"></audio></td>
 <td><audio controls><source src="samples/refnet/101020-210498-Mref.wav"></audio></td>
 <td><audio controls><source src="samples/nodencl/101020-210498-Mnd.wav"></audio></td>
 <td><audio controls><source src="samples/noencl/101020-210498-noencl.wav"></audio></td>
@@ -62,7 +61,6 @@
 </tr>
 <tr>
 <td>happy</td>
-<td><audio controls><source src="samples/original/220184.wav"></audio></td>
 <td><audio controls><source src="samples/refnet/101020-220158-Mref.wav"></audio></td>
 <td><audio controls><source src="samples/nodencl/101020-220158-Mnd.wav"></audio></td>
 <td><audio controls><source src="samples/noencl/101020-220158-noencl.wav"></audio></td>
@@ -71,7 +69,6 @@
 </tr>
 <tr>
 <td>sad</td>
-<td><audio controls><source src="samples/original/230233.wav"></audio></td>
 <td><audio controls><source src="samples/refnet/101020-230444-Mref.wav"></audio></td>
 <td><audio controls><source src="samples/nodencl/101020-230444-Mnd.wav"></audio></td>
 <td><audio controls><source src="samples/noencl/101020-230444-noencl.wav"></audio></td>
@@ -80,7 +77,6 @@
 </tr>
 <tr>
 <td>angry</td>
-<td><audio controls><source src="samples/original/240639.wav"></audio></td>
 <td><audio controls><source src="samples/refnet/101020-240560-Mref.wav"></audio></td>
 <td><audio controls><source src="samples/nodencl/101020-240560-Mnd.wav"></audio></td>
 <td><audio controls><source src="samples/noencl/101020-240560-noencl.wav"></audio></td>
@@ -89,7 +85,6 @@
 </tr>
 <tr> 
 <td>disgust</td>
-<td><audio controls><source src="samples/original/250564.wav"></audio></td>
 <td><audio controls><source src="samples/refnet/101020-250592-Mref.wav"></audio></td>
 <td><audio controls><source src="samples/nodencl/101020-250592-Mnd.wav"></audio></td>
 <td><audio controls><source src="samples/noencl/101020-250592-noencl.wav"></audio></td>
@@ -98,7 +93,6 @@
 </tr>
 <tr>
 <td>fear</td>
-<td><audio controls><source src="samples/original/260554.wav"></audio></td>
 <td><audio controls><source src="samples/refnet/101020-260151-Mref.wav"></audio></td>
 <td><audio controls><source src="samples/nodencl/101020-260151-Mnd.wav"></audio></td>
 <td><audio controls><source src="samples/noencl/101020-260151-noencl.wav"></audio></td>
@@ -112,82 +106,16 @@
 <blockquote>
 <table border=1>
 <tr>
-<td rowspan="2" align="center"><span>Test set</span></td>
-<td rowspan="2" align="center"><span>Original audio<span></td>
-<td colspan="2" align="center"><span>Synthesized speech<span></td>
+<td align="center"><span>emotion</span></td>
+<td align="center"><span>RA-Tacotron</span></td>
+<td align="center"><span>our proposed method<span></td>
+<td align="center"><span>RA-Tacotron</span></td>
+<td align="center"><span>our proposed method<span></td>
+<td align="center"><span>RA-Tacotron</span></td>
+<td align="center"><span>our proposed method<span></td>
 </tr>
 <tr>
-<td align="center"><span>Baseline model<span></td>
-<td align="center"><span>Proposed model<span></td>
-</tr>
-<tr>
-<td>001-C</td>
-<td><audio controls><source src="samples/original/001_137.wav"></audio></td>
-<td><audio controls><source src="samples/se/001-C-B/2.mel.wav"></audio></td>
-<td><audio controls><source src="samples/se/001-C-P/2.mel.wav"></audio></td>
-</tr>
-<tr>
-<td><font color=red>001-N</font></td>
-<td><audio controls><source src="samples/original/001n_137.wav"></audio></td>
-<td align="center">None</td>
-<td><audio controls><source src="samples/se/001-N-P/2.mel.wav"></audio></td>
-</tr>
-<tr>
-<td>001-D</td>
-<td><audio controls><source src="samples/original/001d_137.wav"></audio></td>
-<td><audio controls><source src="samples/se/001-D-B/2.mel.wav"></audio></td>
-<td align="center">*</td>
-</tr>
-<tr>
-<td>045-C</td>
-<td><audio controls><source src="samples/original/045_431.wav"></audio></td>
-<td><audio controls><source src="samples/se/045-C-B/2.mel.wav"></audio></td>
-<td><audio controls><source src="samples/se/045-C-P/2.mel.wav"></audio></td>
-</tr>
-<tr>
-<td><font color=red>045-N</font></td>
-<td><audio controls><source src="samples/original/045n_431.wav"></audio></td>
-<td align="center">None</td>
-<td><audio controls><source src="samples/se/045-N-P/2.mel.wav"></audio></td>
-</tr>
-<tr>
-<td>045-D</td>
-<td><audio controls><source src="samples/original/045d_431.wav"></audio></td>
-<td><audio controls><source src="samples/se/045-D-B/2.mel.wav"></audio></td>
-<td align="center">*</td>
-</tr>
-<tr>
-<td>012-C</td>
-<td><audio controls><source src="samples/original/012_137.wav"></audio></td>
-<td><audio controls><source src="samples/se/012-C-B/2.mel.wav"></audio></td>
-<td><audio controls><source src="samples/se/012-C-P/2.mel.wav"></audio></td>
-</tr>
-<tr>
-<td><font color=red>012-N</font></td>
-<td><audio controls><source src="samples/original/012n_137.wav"></audio></td>
-<td align="center">None</td>
-<td><audio controls><source src="samples/se/012-N-P/2.mel.wav"></audio></td>
-</tr>
-<tr>
-<td>012-D</td>
-<td><audio controls><source src="samples/original/012d_137.wav"></audio></td>
-<td><audio controls><source src="samples/se/012-D-B/2.mel.wav"></audio></td>
-<td align="center">*</td>
-</tr>
-<tr>
-<td>093-C</td>
-<td><audio controls><source src="samples/original/093_431.wav"></audio></td>
-<td><audio controls><source src="samples/se/093-C-B/2.mel.wav"></audio></td>
-<td><audio controls><source src="samples/se/093-C-P/2.mel.wav"></audio></td>
-</tr>
-<tr>
-<td><font color=red>093-N</font></td>
-<td><audio controls><source src="samples/original/093n_431.wav"></audio></td>
-<td align="center">None</td>
-<td><audio controls><source src="samples/se/093-N-P/2.mel.wav"></audio></td>
-</tr>
-<tr>
-<td>093-D</td>
+<td>surprise</td>
 <td><audio controls><source src="samples/original/093d_431.wav"></audio></td>
 <td><audio controls><source src="samples/se/093-D-B/2.mel.wav"></audio></td>
 <td align="center">*</td>
