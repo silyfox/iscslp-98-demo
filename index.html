@@ -5,50 +5,19 @@
 <title>Demo for paper: CONTROLLABLE EMOTION TRANSFER FOR END-TO-END SPEECH SYNTHESIS</title>
 </head>
 <body>
-<h1 id="Learn2Sing" style="font-size:30px"><center>Demo for paper: CONTROLLABLE EMOTION TRANSFER FOR END-TO-END SPEECH SYNTHESIS</center></h1>
+<h1 id="Demo for paper" style="font-size:30px"><center> CONTROLLABLE EMOTION TRANSFER FOR END-TO-END SPEECH SYNTHESIS</center></h1>
 <h2 id="abstract">Abstract</h2>
 <div style="text-align: justify">Emotion embedding space learned from references is a straightforward approach for emotion transfer in encoder-decoder structured emotional TTS systems. However, the transferred emotion in the synthetic speech is not accurate and expressive enough with emotion category confusions. Moreover, it is hard to select an appropriate reference to deliver desired emotion strength. To solve these problems, we propose a novel approach based on Tacotron. First, we plug two emotion classifiers -- one after the reference encoder, one after the decoder output -- to enhance the emotion-discriminative ability of the emotion embedding and the predicted mel-spectrum. Second, we adopt style loss to measure the difference between the generated and reference mel-spectrum. The emotion strength in the synthetic speech can be controlled by adjusting the value of the emotion embedding as the emotion embedding can be viewed as the feature map of the mel-spectrum. Experiments on emotion transfer and strength control have shown that the synthetic speech of the proposed method is more accurate and expressive with less emotion category confusions and the control of emotion strength is more salient to listeners.</div>
 </div>
 <p><br /></p>
 <center><p><img src="system.png" alt="arch" /></p> </center>
-<h4>1. True emotional speech </h4>
-<blockquote>
-<table border=1>
-<tr>
-<td align="center"><span>emotion</span></td>
-<td align="center"><span>true audio(D)<span></td>
-</tr>
-<tr>
-<td>surprise</td>
-<td><audio controls><source src="samples/original/210498.wav"></audio></td>
-</tr>
-<tr>
-<td>happy</td>
-<td><audio controls><source src="samples/original/220184.wav"></audio></td>
-</tr>
-<tr>
-<td>sad</td>
-<td><audio controls><source src="samples/original/230233.wav"></audio></td>
-</tr>
-<tr>
-<td>angry</td>
-<td><audio controls><source src="samples/original/240639.wav"></audio></td>
-</tr>
-<td>disgust</td>
-<td><audio controls><source src="samples/original/250564.wav"></audio></td>
-</tr>
-<td>fear</td>
-<td><audio controls><source src="samples/original/260554.wav"></audio></td>
-</tr>
-</table>
-<br/>
-</blockquote>
-<h4>2. Style transfer: </h4>
+<h4>1. Style transfer: </h4>
 <blockquote>
 <table border=1>
 <div style="text-align: justify"> 让那些小主顾们等一等到吧 </div>
 <tr>
 <td align="center"><span>emotion</span></td>
+<td align="center"><span>Reference audio</span></td>
 <td align="center"><span>Prosody Tacotron</span></td>
 <td align="center"><span>Add emotion embedding network<span></td>
 <td align="center"><span>Add auxiliary network<span></td>
@@ -57,6 +26,7 @@
 </tr>
 <tr>
 <td>surprise</td>
+<td><audio controls><source src="samples/original/210498.wav"></audio></td>
 <td><audio controls><source src="samples/refnet/101020-210498-Mref.wav"></audio></td>
 <td><audio controls><source src="samples/nodencl/101020-210498-Mnd.wav"></audio></td>
 <td><audio controls><source src="samples/noencl/101020-210498-noencl.wav"></audio></td>
@@ -65,6 +35,7 @@
 </tr>
 <tr>
 <td>happy</td>
+<td><audio controls><source src="samples/original/220184.wav"></audio></td>
 <td><audio controls><source src="samples/refnet/101020-220158-Mref.wav"></audio></td>
 <td><audio controls><source src="samples/nodencl/101020-220158-Mnd.wav"></audio></td>
 <td><audio controls><source src="samples/noencl/101020-220158-noencl.wav"></audio></td>
@@ -73,6 +44,7 @@
 </tr>
 <tr>
 <td>sad</td>
+<td><audio controls><source src="samples/original/230233.wav"></audio></td>
 <td><audio controls><source src="samples/refnet/101020-230444-Mref.wav"></audio></td>
 <td><audio controls><source src="samples/nodencl/101020-230444-Mnd.wav"></audio></td>
 <td><audio controls><source src="samples/noencl/101020-230444-noencl.wav"></audio></td>
@@ -81,6 +53,7 @@
 </tr>
 <tr>
 <td>angry</td>
+<td><audio controls><source src="samples/original/240639.wav"></audio></td>
 <td><audio controls><source src="samples/refnet/101020-240560-Mref.wav"></audio></td>
 <td><audio controls><source src="samples/nodencl/101020-240560-Mnd.wav"></audio></td>
 <td><audio controls><source src="samples/noencl/101020-240560-noencl.wav"></audio></td>
@@ -89,6 +62,7 @@
 </tr>
 <tr> 
 <td>disgust</td>
+<td><audio controls><source src="samples/original/250564.wav"></audio></td>
 <td><audio controls><source src="samples/refnet/101020-250592-Mref.wav"></audio></td>
 <td><audio controls><source src="samples/nodencl/101020-250592-Mnd.wav"></audio></td>
 <td><audio controls><source src="samples/noencl/101020-250592-noencl.wav"></audio></td>
@@ -97,6 +71,7 @@
 </tr>
 <tr>
 <td>fear</td>
+<td><audio controls><source src="samples/original/260554.wav"></audio></td>
 <td><audio controls><source src="samples/refnet/101020-260151-Mref.wav"></audio></td>
 <td><audio controls><source src="samples/nodencl/101020-260151-Mnd.wav"></audio></td>
 <td><audio controls><source src="samples/noencl/101020-260151-noencl.wav"></audio></td>
