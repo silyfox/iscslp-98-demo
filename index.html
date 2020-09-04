@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Demo for paper:CONTROLLABLE EMOTION TRANSFER FOR END-TO-END SPEECH SYNTHESIS</title>
+<title>Demo for paper: CONTROLLABLE EMOTION TRANSFER FOR END-TO-END SPEECH SYNTHESIS</title>
 </head>
 <body>
-<h2 align="center">CONTROLLABLE EMOTION TRANSFER FOR END-TO-END SPEECH SYNTHESIS<h2>
+<h2 align="center">Demo for paper: CONTROLLABLE EMOTION TRANSFER FOR END-TO-END SPEECH SYNTHESIS<h2>
 <div>Abstract: Emotion embedding space learned from references is a straightforward approach for emotion transfer in encoder-decoder structured emotional TTS systems. However, the transferred emotion in the synthetic speech is not accurate and expressive enough with emotion category confusions. Moreover, it is hard to select an appropriate reference to deliver desired emotion strength. To solve these problems, we propose a novel approach based on Tacotron. First, we plug two emotion classifiers -- one after the reference encoder, one after the decoder output -- to enhance the emotion-discriminative ability of the emotion embedding and the predicted mel-spectrum. Second, we adopt style loss to measure the difference between the generated and reference mel-spectrum. The emotion strength in the synthetic speech can be controlled by adjusting the value of the emotion embedding as the emotion embedding can be viewed as the feature map of the mel-spectrum. Experiments on emotion transfer and strength control have shown that the synthetic speech of the proposed method is more accurate and expressive with less emotion category confusions and the control of emotion strength is more salient to listeners.
 </div>
+<center><p><img src="system.png" alt="arch" /></p> </center>
 <h4>1. True emotional speech </h4>
 <blockquote>
 <table border=1>
@@ -40,7 +41,7 @@
 </table>
 <br/>
 </blockquote>
-<h4>2. The results of style transfer: </h4>
+<h4>2. Style transfer: </h4>
 <blockquote>
 <table border=1>
 <tr>
@@ -102,7 +103,7 @@
 </table>
 <br/>
 </blockquote>
-<h4>2. The results of emotion strength control: </h4>
+<h4>2. Emotion strength control: </h4>
 <blockquote>
 <table border=1>
 <tr>
