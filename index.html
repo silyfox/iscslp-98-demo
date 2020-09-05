@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1 id="Demo for paper" style="font-size:30px"><center> CONTROLLABLE EMOTION TRANSFER FOR END-TO-END SPEECH SYNTHESIS</center></h1>
-<h2 id="abstract">Abstract</h2>
+<h2 id="abstract">Abstract:</h2>
 <div style="text-align: justify">Emotion embedding space learned from references is a straightforward approach for emotion transfer in encoder-decoder structured emotional TTS systems. However, the transferred emotion in the synthetic speech is not accurate and expressive enough with emotion category confusions. Moreover, it is hard to select an appropriate reference to deliver desired emotion strength. To solve these problems, we propose a novel approach based on Tacotron. First, we plug two emotion classifiers -- one after the reference encoder, one after the decoder output -- to enhance the emotion-discriminative ability of the emotion embedding and the predicted mel-spectrum. Second, we adopt style loss to measure the difference between the generated and reference mel-spectrum. The emotion strength in the synthetic speech can be controlled by adjusting the value of the emotion embedding as the emotion embedding can be viewed as the feature map of the mel-spectrum. Experiments on emotion transfer and strength control have shown that the synthetic speech of the proposed method is more accurate and expressive with less emotion category confusions and the control of emotion strength is more salient to listeners.</div>
 </div>
 <p><br /></p>
@@ -20,10 +20,10 @@
 <td align="center"><span>emotion</span></td>
 <td align="center"><span>Reference audio</span></td>
 <td align="center"><span>Prosody Tacotron</span></td>
-<td align="center"><span>Add emotion embedding network<span></td>
-<td align="center"><span>Add auxiliary network<span></td>
-<td align="center"><span>Add emotion embedding network and auxiliary network<span></td>
-<td align="center"><span>our proposed method<span></td>
+<td align="center"><span><u>+ L<sub>cls_src</sub></u><span></td>
+<td align="center"><span><u>+ L<sub>cls_tgt</sub></u><span></td>
+<td align="center"><span><u>+  L<sub>cls_src</sub> + L<sub>cls_tgt</u></sub><span></td>
+<td align="center"><span><u>L<sub>total</sub></u><span></td>
 </tr>
 <tr>
 <td>surprise</td>
@@ -151,3 +151,4 @@
 </table>
 <br/>
 </blockquote>
+
